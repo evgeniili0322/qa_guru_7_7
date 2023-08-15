@@ -7,7 +7,7 @@ NEW_CSV_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'resourc
 
 
 def test_write_csv(remove_csv):
-    with open(NEW_CSV_PATH, 'w') as csv_file:
+    with open(NEW_CSV_PATH, 'w', newline='') as csv_file:
         csvwriter = csv.writer(csv_file, delimiter=';')
         csvwriter.writerow(['Bonny', 'Born', 'Peter'])
         csvwriter.writerow(['Alex', 'Serj', 'Yana'])
