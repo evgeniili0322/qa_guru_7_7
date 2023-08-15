@@ -6,7 +6,7 @@ import os
 def remove_csv():
     yield
 
-    os.remove(os.path.join(os.path.abspath('resources'), 'new_csv.csv'))
+    os.remove(os.path.join(os.path.abspath('tests/resources'), 'new_csv.csv'))
 
 
 @pytest.fixture(scope='function')

@@ -1,3 +1,4 @@
 pytest
 pypdf[image]
 xlrd
+openpyxl

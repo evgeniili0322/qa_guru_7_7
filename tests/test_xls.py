@@ -2,6 +2,7 @@ import xlrd
 import os
 
 # TODO оформить в тест, добавить ассерты и использовать универсальный путь
+
 XLS_PATH = os.path.join(os.path.abspath('resources'), 'file_example_XLS_10.xls')
 
 

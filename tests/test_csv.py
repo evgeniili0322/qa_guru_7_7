@@ -2,6 +2,7 @@ import csv
 import os
 
 # TODO оформить в тест, добавить ассерты и использовать универсальный путь
+
 NEW_CSV_PATH = os.path.join(os.path.abspath('resources'), 'new_csv.csv')
 
 
