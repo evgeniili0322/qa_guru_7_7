@@ -9,7 +9,6 @@ XLSX_PATH = os.path.join(os.path.abspath('resources'), 'file_example_XLSX_50.xls
 def test_open_xlsx():
     workbook = load_workbook(XLSX_PATH)
     sheet = workbook.active
-    print(workbook.sheetnames)
 
     assert sheet.cell(row=3, column=2).value == 'Mara'
     assert sheet.max_row == 51
