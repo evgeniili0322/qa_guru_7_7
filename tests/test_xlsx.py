@@ -3,9 +3,11 @@ from openpyxl import load_workbook
 
 # TODO оформить в тест, добавить ассерты и использовать универсальный путь
 
+XLSX_PATH = os.path.join(os.path.abspath('resources'), 'file_example_XLSX_50.xlsx')
+
 
 def test_open_xlsx():
-    workbook = load_workbook('resources/file_example_XLSX_50.xlsx')
+    workbook = load_workbook(XLSX_PATH)
     sheet = workbook.active
     print(workbook.sheetnames)
 
