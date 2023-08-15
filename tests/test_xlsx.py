@@ -3,7 +3,7 @@ from openpyxl import load_workbook
 
 # TODO оформить в тест, добавить ассерты и использовать универсальный путь
 
-XLSX_PATH = os.path.join(os.path.abspath('resources'), 'file_example_XLSX_50.xlsx')
+XLSX_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'resources', 'file_example_XLSX_50.xlsx')
 
 
 def test_open_xlsx():

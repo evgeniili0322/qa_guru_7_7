@@ -3,7 +3,7 @@ import os
 
 # TODO оформить в тест, добавить ассерты и использовать универсальный путь
 
-XLS_PATH = os.path.join(os.path.abspath('resources'), 'file_example_XLS_10.xls')
+XLS_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'resources', 'file_example_XLS_10.xls')
 
 
 def test_open_xsl():

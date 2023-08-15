@@ -3,7 +3,7 @@ import os
 
 # TODO оформить в тест, добавить ассерты и использовать универсальный путь
 
-PDF_PATH = os.path.join(os.path.abspath('resources'), 'docs-pytest-org-en-latest.pdf')
+PDF_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'resources', 'docs-pytest-org-en-latest.pdf')
 
 
 def test_read_pdf(remove_img):
